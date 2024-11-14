@@ -201,17 +201,6 @@ p {
   background: #fff;
 }
 
-
-.report-container .report .body .sub-limit-container {
-  display: flex;
-  padding: 24px;
-  flex-direction: column;
-  justify-content: center;
-  gap: 12px;
-  border-bottom: 1px solid var(--stroke-heavy-contrast, #cbd5e1);
-  background: #fff;
-}
-
 .report-container .report .body .billing-header {
   display: flex;
   padding: 16px 24px;
@@ -301,7 +290,10 @@ p {
 }
 
 .flex-column {
+  display: flex;
   flex-direction: column !important;
+  justify-content: center;
+  gap: 20px;
 }
 
 .d-flex {
@@ -1653,40 +1645,32 @@ tr {
 
 @media (max-width: 1000px) {
   .reports-container .body-report {
-    flex-direction: column;
-  }
-
-  .report-container {
-    width: 100%;
-    margin-bottom: 16px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .reports-container .body-report {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .report-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 16px;
+    width: calc(140%);
+    margin: 1%;
   }
 }
 
-@media screen and (max-width: 876px) {
+@media (max-width: 756px) {
   .reports-container .body-report {
-    display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
   .report-container {
-    width: 100%;
-    margin-bottom: 16px;
+    width: 200%;
   }
-  
+
+  .flex-column {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
+
+
