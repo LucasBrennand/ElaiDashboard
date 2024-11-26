@@ -78,11 +78,8 @@ body {
   font-family: Poppins, sans-serif;
   background: none 0% 0% / auto repeat scroll padding-box border-box
     rgb(248, 250, 252);
-  border: 1.21212px solid rgb(203, 213, 225);
-  border-radius: 8px;
   height: 670px;
   max-height: 670px;
-  padding: 24px;
   color: rgb(33, 37, 41);
   font-size: 16px;
   font-weight: 400;
@@ -94,8 +91,6 @@ body {
   height: 670px;
   max-height: 670px;
   padding: 24px;
-  border-radius: 8px;
-  border: 1px solid var(--stroke-heavy-contrast, #cbd5e1);
   background: var(--surface-secondary, #f1f5f9);
 }
 
@@ -302,6 +297,7 @@ p {
 
 .dropdown {
   position: relative;
+  width: 100%;
   display: inline-block;
 }
 
@@ -381,6 +377,7 @@ textarea {
 .task-dropdown-button .inner-cont .val-number {
   color: #068373;
   text-align: right;
+  text-wrap: nowrap;
   font-family: Poppins;
   font-size: 13px;
   font-style: normal;
